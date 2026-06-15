@@ -16,11 +16,13 @@ The dataset contains information related to vendors, purchases, inventory, prici
 ## Objectives
 Through this project, I aim to:
 
-* Practice working with multiple datasets
+* Practice working with large datasets
 * Improve my SQL skills
 * Learn basic data modeling concepts
 * Create an interactive Power BI dashboard
 * Develop reporting and data storytelling skills
+* Gain experience working with data stored in a database
+
 
 ## Questions I Want to Explore
 * Which vendors account for the highest procurement spending?
@@ -81,7 +83,7 @@ This section documents the steps I take while working on this project.
 * [ ] Review inventory levels against sales activity
 
 ### Step 7: SQL Analysis
-* [ ] Import data into a database
+* [ ] Explore tables using SQL
 * [ ] Create SQL queries to answer business questions
 * [ ] Validate findings from the analysis
 
@@ -102,7 +104,7 @@ This section documents the steps I take while working on this project.
 * [ ] Publish completed project
 
 ## Tools
-* Microsoft Excel
+* SQLite (DB Browser for SQLite)
 * SQL
 * Power BI
 
