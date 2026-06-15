@@ -61,7 +61,7 @@ This section documents the steps I take while working on this project.
 * [x] Document observations about the data
 
 ### Step 3: Data Cleaning & Preparation
-* [ ] Check for missing values
+* [x] Check for missing values
 * [ ] Review duplicate records
 * [ ] Standardize data formats
 * [ ] Prepare data for analysis
