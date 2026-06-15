@@ -163,3 +163,41 @@ This file contains summarized vendor and product performance data.
 * Useful for checking results later.
 ### Decision
 For this project, I plan to use the raw transaction tables for the analysis and use this file only as a reference.
+
+---
+
+## inventory.db
+
+### What I found
+I initially reviewed the dataset files in Excel to understand the fields and the purpose of each table.
+While exploring the purchases and sales files, Excel displayed a warning that the datasets exceeded the maximum number of rows supported in a worksheet. Because of this, I explored the SQLite database file included in the dataset.
+### Notes
+* Excel was useful for reviewing the structure and fields of each dataset.
+* The purchases and sales tables contain millions of records and cannot be fully loaded into Excel.
+* I switched to SQLite to continue exploring the data.
+* The database contains the same tables provided in the CSV files.
+### Tables Available
+* begin_inventory
+* end_inventory
+* purchase_prices
+* purchases
+* sales
+* vendor_invoice
+* vendor_sales_summary
+### Learning Reflection
+One thing I learned during this stage was that Excel is not the best tool for large datasets. When I encountered Excel's row limitation, I had to adapt my approach and learn how to explore the data using SQLite.
+
+---
+## Summary
+Based on my review, the dataset contains purchasing, sales, inventory, pricing, and vendor information spread across multiple tables.
+
+The main tables I plan to use for analysis are:
+* purchases
+* sales
+* purchase_prices
+* vendor_invoice
+* begin_inventory
+* end_inventory
+
+The vendor_sales_summary table will be used only as a reference to validate results generated from the raw data.
+
