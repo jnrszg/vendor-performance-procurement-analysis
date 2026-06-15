@@ -43,7 +43,7 @@ Through this project, I aim to:
 | Milestone             | Date                 |
 | --------------------- | -------------------- |
 | Project Started       | 15 June 2026         |
-| Dataset Review        | In Progress          |
+| Dataset Review        | 15 June 2026         |
 | Data Cleaning         | Pending              |
 | SQL Analysis          | Pending              |
 | Dashboard Development | Pending              |
@@ -61,9 +61,9 @@ This section documents the steps I take while working on this project.
 ### Step 2: Dataset Review
 
 * [x] Review all dataset files
-* [ ] Understand the purpose of each table
-* [ ] Identify key fields and relationships
-* [ ] Document observations about the data
+* [x] Understand the purpose of each table
+* [x] Identify key fields and relationships
+* [x] Document observations about the data
 
 ### Step 3: Data Cleaning & Preparation
 
