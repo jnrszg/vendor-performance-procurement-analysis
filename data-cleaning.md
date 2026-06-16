@@ -1,4 +1,4 @@
-### DATA CLEANING
+## DATA CLEANING
 This document records the data quality checks and preparation steps performed before analysis.
 
 ---
