@@ -67,9 +67,9 @@ This section documents the steps I take while working on this project.
 * [x] Prepare data for analysis
 
 ### Step 4: Procurement Analysis
-* [ ] Identify vendors with the highest procurement spending
-* [ ] Analyze procurement spending trends over time
-* [ ] Determine whether spending is concentrated among a small number of vendors
+* [x] Identify vendors with the highest procurement spending
+* [x] Analyze procurement spending trends over time
+* [x] Determine whether spending is concentrated among a small number of vendors
 
 ### Step 5: Sales Analysis
 * [ ] Identify vendors generating the highest sales value
