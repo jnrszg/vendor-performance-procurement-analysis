@@ -41,8 +41,8 @@ Through this project, I aim to:
 | --------------------- | -------------------- |
 | Project Started       | 15 June 2026         |
 | Dataset Review        | 15 June 2026         |
-| Data Cleaning         | 15-00 June 2026      |
-| SQL Analysis          | Pending              |
+| Data Cleaning         | 15-16 June 2026      |
+| SQL Analysis          | 16-xx June 2026      |
 | Dashboard Development | Pending              |
 | Project Completion    | Target: 15 July 2026 |
 
