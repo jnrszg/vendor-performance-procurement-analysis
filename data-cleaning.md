@@ -411,7 +411,6 @@ FROM begin_inventory;
 
 ### Observation
 The number of unique InventoryIds matches the total number of rows, indicating that each inventory record appears only once in the table.
-
 Further investigation was performed to determine whether exact duplicate records existed.
 
 ```sql
