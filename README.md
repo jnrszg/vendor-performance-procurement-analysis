@@ -63,8 +63,8 @@ This section documents the steps I take while working on this project.
 ### Step 3: Data Cleaning & Preparation
 * [x] Check for missing values
 * [x] Review duplicate records
-* [ ] Standardize data formats
-* [ ] Prepare data for analysis
+* [x] Standardize data formats
+* [x] Prepare data for analysis
 
 ### Step 4: Procurement Analysis
 * [ ] Identify vendors with the highest procurement spending
