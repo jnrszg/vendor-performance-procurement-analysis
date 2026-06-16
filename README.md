@@ -41,7 +41,7 @@ Through this project, I aim to:
 | --------------------- | -------------------- |
 | Project Started       | 15 June 2026         |
 | Dataset Review        | 15 June 2026         |
-| Data Cleaning         | Pending              |
+| Data Cleaning         | 15-00 June 2026      |
 | SQL Analysis          | Pending              |
 | Dashboard Development | Pending              |
 | Project Completion    | Target: 15 July 2026 |
@@ -62,7 +62,7 @@ This section documents the steps I take while working on this project.
 
 ### Step 3: Data Cleaning & Preparation
 * [x] Check for missing values
-* [ ] Review duplicate records
+* [x] Review duplicate records
 * [ ] Standardize data formats
 * [ ] Prepare data for analysis
 
