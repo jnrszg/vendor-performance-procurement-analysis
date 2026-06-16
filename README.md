@@ -77,10 +77,10 @@ This section documents the steps I take while working on this project.
 * [x] Compare procurement spending with sales revenue
       
 ### Step 6: Product & Inventory Analysis
-* [ ] Identify products with the highest purchase cost
-* [ ] Identify products generating the highest sales revenue
-* [ ] Calculate inventory value
-* [ ] Review inventory levels against sales activity
+* [x] Identify products with the highest purchase cost
+* [x] Identify products generating the highest sales revenue
+* [x] Calculate inventory value
+* [x] Review inventory levels against sales activity
 
 ### Step 7: SQL Analysis
 * [ ] Explore tables using SQL
