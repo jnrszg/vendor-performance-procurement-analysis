@@ -72,9 +72,9 @@ This section documents the steps I take while working on this project.
 * [x] Determine whether spending is concentrated among a small number of vendors
 
 ### Step 5: Sales Analysis
-* [ ] Identify vendors generating the highest sales value
-* [ ] Analyze sales trends over time
-* [ ] Compare procurement spending with sales revenue
+* [x] Identify vendors generating the highest sales value
+* [x] Analyze sales trends over time
+* [x] Compare procurement spending with sales revenue
       
 ### Step 6: Product & Inventory Analysis
 * [ ] Identify products with the highest purchase cost
