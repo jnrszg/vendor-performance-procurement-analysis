@@ -122,3 +122,7 @@ The top 10 vendors collectively accounted for approximately 65% of total procure
 
 ### Insight
 Procurement spending is moderately concentrated among a small number of key vendors. While these suppliers likely provide important products and purchasing efficiencies, the business may face increased supply chain risk if it becomes overly dependent on a limited number of vendors.
+
+## Procurement Analysis Summary
+- The analysis showed that procurement spending is concentrated among a small number of vendors, with DIAGEO NORTH AMERICA INC being the largest supplier. Procurement spending increased during 2024 and remained consistently high throughout the year.
+- Overall, the findings suggest that the business relies on key suppliers to support its purchasing and inventory requirements.
