@@ -82,30 +82,25 @@ This section documents the steps I take while working on this project.
 * [x] Calculate inventory value
 * [x] Review inventory levels against sales activity
 
-### Step 7: SQL Analysis
-* [ ] Explore tables using SQL
-* [ ] Create SQL queries to answer business questions
-* [ ] Validate findings from the analysis
-
-### Step 8: Dashboard Development
+### Step 7: Dashboard Development
 * [ ] Build KPI measures
 * [ ] Create Power BI visualizations
 * [ ] Add filters and interactive features
 * [ ] Design an executive dashboard
 
-### Step 9: Insights & Recommendations
+### Step 8: Insights & Recommendations
 * [ ] Summarize key findings
 * [ ] Identify risks and opportunities
 * [ ] Develop recommendations based on the analysis
 
-### Step 10: Documentation
+### Step 9: Documentation
 * [ ] Add screenshots
 * [ ] Update project documentation
 * [ ] Publish completed project
 
 ## Tools
 * SQLite (DB Browser for SQLite)
-* SQL
+* DBeaver
 * Power BI
 
 ## Project Status
