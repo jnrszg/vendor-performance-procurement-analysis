@@ -42,16 +42,16 @@ Through this project, I aim to:
 | Project Started       | 15 June 2026         |
 | Dataset Review        | 15 June 2026         |
 | Data Cleaning         | 15-16 June 2026      |
-| SQL Analysis          | 16-xx June 2026      |
-| Dashboard Development | Pending              |
-| Project Completion    | Target: 15 July 2026 |
+| SQL Analysis          | 16-17 June 2026      |
+| Dashboard Development | 17-xx June 2026      |
+| Project Completion    | 20 June 2026         |
 
 ## Project Journey
 This section documents the steps I take while working on this project.
 
 ### Step 1: Project Setup
 * [x] Created GitHub repository
-* [x] Selected and downloaded the dataset
+* [x] Selected and downloaded the dataset from Kaggle
 * [x] Defined project objectives and business questions
 
 ### Step 2: Dataset Review
