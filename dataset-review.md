@@ -32,6 +32,7 @@ This file contains purchase records from vendors. It includes information about 
 * PurchasePrice
 * Quantity
 * Dollars
+
 ### Notes
 * Looks like each row represents a purchase transaction.
 * Contains vendor and product information in the same table.
@@ -53,6 +54,7 @@ This file contains sales records for products sold.
 * SalesDate
 * VendorNo
 * VendorName
+
 ### Notes
 * Looks like each row represents a sale.
 * Includes sales quantity and sales value.
@@ -74,6 +76,7 @@ This file appears to be a reference table containing product pricing and vendor 
 * PurchasePrice
 * VendorNumber
 * VendorName
+
 ### Notes
 * Contains product and supplier details.
 * Includes pricing information.
@@ -96,6 +99,7 @@ This file contains vendor invoice and payment information.
 * Dollars
 * Freight
 * Approval
+
 ### Notes
 * Contains invoice and payment details.
 * Includes purchase order information.
@@ -116,6 +120,7 @@ This file shows inventory levels at the beginning of the reporting period.
 * onHand
 * Price
 * startDate
+
 ### Notes
 * Shows quantity on hand at the start of the period.
 * Includes product and store information.
@@ -136,6 +141,7 @@ This file shows inventory levels at the end of the reporting period.
 * onHand
 * Price
 * endDate
+
 ### Notes
 * Shows quantity on hand at the end of the period.
 * Can be compared with beginning inventory data.
@@ -159,6 +165,7 @@ This file contains summarized vendor and product performance data.
 * ProfitMargin
 * StockTurnover
 * SalestoPurchaseRatio
+
 ### Notes
 * Contains pre-calculated metrics.
 * Appears to be created from the other dataset files.
@@ -202,4 +209,3 @@ The main tables I plan to use for analysis are:
 * end_inventory
 
 The vendor_sales_summary table will be used only as a reference to validate results generated from the raw data.
-
