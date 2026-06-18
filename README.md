@@ -86,16 +86,16 @@ This section documents the steps I take while working on this project.
 * [x] Build KPI measures
 * [x] Create Power BI visualizations
 * [x] Add filters and interactive features
-* [ ] Design an executive dashboard
+* [x] Design an executive dashboard
 
 ### Step 8: Insights & Recommendations
-* [ ] Summarize key findings
+* [x] Summarize key findings
 * [ ] Identify risks and opportunities
 * [ ] Develop recommendations based on the analysis
 
 ### Step 9: Documentation
 * [ ] Add screenshots
-* [ ] Update project documentation
+* [x] Update project documentation
 * [ ] Publish completed project
 
 ## Tools
