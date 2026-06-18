@@ -1,91 +1,331 @@
-## DASHBOARD DEVELOPMENT
+# DASHBOARD DEVELOPMENT
 
 ---
 
 ## Objective
-The goal of this phase is to create an interactive Power BI dashboard that presents procurement, sales, product, and inventory insights in a clear and meaningful way.
+
+The goal of this phase is to create interactive Power BI dashboards that transform procurement, sales, and inventory data into actionable business insights. The dashboards were designed to support decision-making through KPI monitoring, trend analysis, vendor evaluation, product performance tracking, inventory management, and store-level analysis.
 
 ---
 
-## Dashboard Requirements
-### KPI Measures
-The dashboard will include key performance indicators (KPIs) to provide a high-level overview of business performance.
+# KPI Measures
 
-Planned KPIs:
-* Total Procurement Spend
-* Total Sales Revenue
-* Total Inventory Value
-* Total Vendors
+## Procurement Dashboard
 
-## Dashboard Progress
-
-### KPI Measures Created
-
-| KPI                     | Measure                                                           |
-| ----------------------- | ----------------------------------------------------------------- |
-| Total Procurement Spend | SUM(purchases[Dollars])                                           |
-| Total Sales Revenue     | SUM(sales[SalesDollars])                                          |
-| Total Vendors           | DISTINCTCOUNT(purchases[VendorName])                              |
-| Total Inventory Value   | SUMX(end_inventory, end_inventory[onHand] * end_inventory[Price]) |
+| KPI                      | DAX Measure                                                               |
+| ------------------------ | ------------------------------------------------------------------------- |
+| Total Procurement Spend  | `SUM(purchases[Dollars])`                                                 |
+| Total Purchase Quantity  | `SUM(purchases[Quantity])`                                                |
+| Active Vendors           | `DISTINCTCOUNT(purchases[VendorName])`                                    |
+| Largest Vendor Spend     | `MAXX(VALUES(purchases[VendorName]), CALCULATE(SUM(purchases[Dollars])))` |
+| Average Spend per Vendor | `DIVIDE([Total Procurement Spend],[Active Vendors])`                      |
 
 ### KPI Results
 
-| KPI                     |   Value |
-| ----------------------- | ------: |
-| Total Procurement Spend | 321.90M |
-| Total Sales Revenue     | 452.06M |
-| Total Vendors           |     128 |
-| Total Inventory Value   |  79.70M |
-
-Status: ✅ Completed
+| KPI                      | Value    |
+| ------------------------ | -------- |
+| Total Procurement Spend  | $321.90M |
+| Total Purchase Quantity  | 34M      |
+| Active Vendors           | 128      |
+| Largest Vendor Spend     | $50.96M  |
+| Average Spend per Vendor | $2.51M   |
 
 ---
 
-### Visualizations
-The dashboard will include visualizations to support the business questions explored during the analysis.
+## Sales Dashboard
 
-Planned Visualizations:
+| KPI                   | DAX Measure                                                             |
+| --------------------- | ----------------------------------------------------------------------- |
+| Total Sales Revenue   | `SUM(sales[SalesDollars])`                                              |
+| Units Sold            | `SUM(sales[SalesQuantity])`                                             |
+| Products Sold         | `DISTINCTCOUNT(sales[Description])`                                     |
+| Average Selling Price | `DIVIDE(SUM(sales[SalesDollars]), SUM(sales[SalesQuantity]))`           |
+| Top Product Revenue   | `MAXX(VALUES(sales[Description]), CALCULATE(SUM(sales[SalesDollars])))` |
 
-#### Procurement Analysis
-#### Top Vendors by Procurement Spend
-- A bar chart was created to identify vendors with the highest procurement spending. The analysis showed that DIAGEO NORTH AMERICA INC had the highest procurement spend, followed by MARTIGNETTI COMPANIES and JIM BEAM BRANDS COMPANY.
-> Key Finding: Procurement spending is concentrated among a small number of vendors, with DIAGEO NORTH AMERICA INC representing the largest procurement spend.
+### KPI Results
 
-#### Procurement Spending Trend
-- A line chart was created to analyze procurement spending patterns over time. Procurement spending increased steadily during the first half of the year, peaking in July before fluctuating throughout the remaining months.
-> Key Finding: Procurement activity remained strong throughout the year, with spending consistently exceeding $26 million during the second half of the year.
+| KPI                   | Value    |
+| --------------------- | -------- |
+| Total Sales Revenue   | $452.06M |
+| Units Sold            | 33M      |
+| Products Sold         | 10K      |
+| Average Selling Price | $13.73   |
+| Top Product Revenue   | $7.96M   |
 
-#### Vendor Spend Concentration
-- A treemap was used to visualize the distribution of procurement spending across vendors. The chart highlighted that a relatively small group of suppliers accounted for a significant portion of total procurement spend.
-> Key Finding: Procurement spending is moderately concentrated among key suppliers, emphasizing the importance of managing strategic vendor relationships and supplier dependency risks.
-      
-#### Sales Analysis
-* Top Vendors by Sales Revenue
-* Sales Revenue Trend
-* Procurement Spend vs Sales Revenue
+---
 
-#### Product & Inventory Analysis
-* Top Products by Sales Revenue
-* Top Products by Inventory Value
-* Inventory Value vs Sales Activity
+## Inventory Dashboard
 
-### Filters and Interactive Features
-Planned Filters:
+| KPI                                 | DAX Measure                                                         |
+| ----------------------------------- | ------------------------------------------------------------------- |
+| Total Inventory Value               | `SUMX(end_inventory, end_inventory[onHand] * end_inventory[Price])` |
+| Total Inventory Units               | `SUM(end_inventory[onHand])`                                        |
+| Active Products                     | `DISTINCTCOUNT(end_inventory[Description])`                         |
+| Active Stores                       | `DISTINCTCOUNT(end_inventory[Store])`                               |
+| Average Inventory Value per Product | `DIVIDE([Total Inventory Value],[Active Products])`                 |
+
+### KPI Results
+
+| KPI                                 | Value   |
+| ----------------------------------- | ------- |
+| Total Inventory Value               | $79.70M |
+| Total Inventory Units               | 5M      |
+| Active Products                     | 9K      |
+| Active Stores                       | 80      |
+| Average Inventory Value per Product | $9.13K  |
+
+---
+
+# POWER BI VISUALIZATIONS
+
+## Procurement Analysis
+
+### Top Vendors by Procurement Spend
+
+**Chart Type:** Horizontal Bar Chart
+
+**Fields Used:**
+
+* VendorName
+* Dollars
+
+> **Key Finding:**
+> DIAGEO NORTH AMERICA INC recorded the highest procurement spend at approximately $50.96M, followed by MARTIGNETTI COMPANIES and JIM BEAM BRANDS COMPANY.
+
+---
+
+### Top Products by Procurement Spend
+
+**Chart Type:** Horizontal Bar Chart
+
+**Fields Used:**
+
+* Description
+* Dollars
+
+> **Key Finding:**
+> Jack Daniels No. 7 Black Label, Tito's Handmade Vodka, and Grey Goose Vodka accounted for a significant portion of procurement expenditure, indicating concentrated investment in premium beverage products.
+
+---
+
+### Monthly Procurement Spending Trend
+
+**Chart Type:** Line Chart
+
+**Fields Used:**
+
+* PODate (Month)
+* Dollars
+
+> **Key Finding:**
+> Procurement spending increased steadily throughout the year, rising from approximately $19.1M in January to a peak of approximately $33.3M in December.
+
+---
+
+### Vendor Spend Concentration
+
+**Chart Type:** Treemap
+
+**Fields Used:**
+
+* VendorName
+* Dollars
+
+> **Key Finding:**
+> Procurement spending was concentrated among a relatively small group of suppliers, highlighting the importance of managing strategic vendor relationships and supplier dependency risks.
+
+---
+
+## Sales Analysis
+
+### Top Vendors by Sales Revenue
+
+**Chart Type:** Horizontal Bar Chart
+
+**Fields Used:**
+
+* VendorName
+* SalesDollars
+
+> **Key Finding:**
+> DIAGEO NORTH AMERICA INC generated the highest sales revenue, followed by MARTIGNETTI COMPANIES and PERNOD RICARD USA.
+
+---
+
+### Top Products by Sales Revenue
+
+**Chart Type:** Horizontal Bar Chart
+
+**Fields Used:**
+
+* Description
+* SalesDollars
+
+> **Key Finding:**
+> Jack Daniels No. 7 Black Label generated the highest sales revenue at approximately $7.96M, followed by Tito's Handmade Vodka and Grey Goose Vodka.
+
+---
+
+### Monthly Sales Revenue Trend
+
+**Chart Type:** Line Chart
+
+**Fields Used:**
+
+* SalesDate (Month)
+* SalesDollars
+
+> **Key Finding:**
+> Sales revenue strengthened throughout the year, increasing from approximately $30M in January to a peak of approximately $52M in December.
+
+---
+
+### Revenue Share by Store
+
+**Chart Type:** Donut Chart
+
+**Fields Used:**
+
+* Store
+* SalesDollars
+
+> **Key Finding:**
+> Revenue generation was distributed across multiple stores, with the highest-performing store contributing approximately 14.6% of total sales revenue.
+
+---
+
+## Inventory Analysis
+
+### Top Products by Inventory Value
+
+**Chart Type:** Horizontal Bar Chart
+
+**Fields Used:**
+
+* Description
+* Inventory Value
+
+> **Key Finding:**
+> Jack Daniels No. 7 Black Label represented the highest inventory value at approximately $0.77M, followed by Jameson Irish Whiskey and Grey Goose Vodka.
+
+---
+
+### Top Products by Units on Hand
+
+**Chart Type:** Horizontal Bar Chart
+
+**Fields Used:**
+
+* Description
+* onHand
+
+> **Key Finding:**
+> Jameson Irish Whiskey held the highest inventory quantity at approximately 18.4K units, followed by Ketel One Vodka and Captain Morgan Spiced Rum.
+
+---
+
+### Inventory Value by Store
+
+**Chart Type:** Donut Chart
+
+**Fields Used:**
+
+* Store
+* Inventory Value
+
+> **Key Finding:**
+> Store 50 held the highest inventory value at approximately $4.89M, representing the largest inventory share among all store locations.
+
+---
+
+### Inventory Distribution by Store
+
+**Chart Type:** Treemap
+
+**Fields Used:**
+
+* Store
+* Inventory Value
+
+> **Key Finding:**
+> Inventory value was distributed across multiple stores, reducing reliance on a single location and supporting balanced inventory management.
+
+---
+
+# Filters and Interactive Features
+
+### Implemented Features
+
+* Cross-filtering between visuals
+* Dynamic KPI calculations
+* Interactive visual highlighting
+* Date-based analysis using DateTable
+* Dashboard page navigation
+* Drill-down capabilities
+
+### Available Filters
+
+* Month
 * Vendor
 * Product
-* Month
+* Store
 
-These filters will allow users to explore the data and interact with dashboard visuals.
+---
 
-## Dashboard Design
-The dashboard will be designed as an executive summary view that highlights key metrics, trends, and performance indicators.
+# Dashboard Design
 
-Planned Layout:
-1. KPI Summary Section
-2. Procurement Analysis Section
-3. Sales Analysis Section
-4. Product & Inventory Analysis Section
+The dashboards were designed using executive reporting principles to provide a clear and concise overview of business performance.
 
-## Status
+## Procurement Dashboard
 
-🚧 In Progress
+* KPI Summary Section
+* Vendor Analysis
+* Product Analysis
+* Procurement Trend Analysis
+* Supplier Concentration Analysis
+
+## Sales Dashboard
+
+* KPI Summary Section
+* Vendor Revenue Analysis
+* Product Revenue Analysis
+* Revenue Trend Analysis
+* Store Performance Analysis
+
+## Inventory Dashboard
+
+* KPI Summary Section
+* Inventory Value Analysis
+* Inventory Quantity Analysis
+* Store Inventory Analysis
+* Inventory Distribution Analysis
+
+---
+
+# Overall Key Findings
+
+* Total Procurement Spend reached **$321.90M** across **128 active vendors**.
+* DIAGEO NORTH AMERICA INC represented the largest procurement supplier with approximately **$50.96M** in procurement spend.
+* Total Sales Revenue reached **$452.06M** from approximately **33 million units sold**.
+* Sales performance strengthened throughout the year, peaking at approximately **$52M** in December.
+* Jack Daniels No. 7 Black Label emerged as the highest-performing product across procurement, sales revenue, and inventory value metrics.
+* Total Inventory Value reached **$79.70M** across approximately **5 million inventory units**.
+* Inventory was distributed across **80 active stores**, with Store 50 holding the highest inventory value at approximately **$4.89M**.
+* Products with the highest inventory value were not always the products with the highest stock quantities, highlighting the difference between inventory investment and inventory volume.
+* Procurement, sales, and inventory analyses collectively indicate strong performance among premium beverage products and key supplier relationships.
+
+---
+
+# Status
+
+✅ Procurement Dashboard Completed
+
+✅ Sales Dashboard Completed
+
+✅ Inventory Dashboard Completed
+
+✅ Dashboard Design Completed
+
+✅ Interactive Features Implemented
+
+
