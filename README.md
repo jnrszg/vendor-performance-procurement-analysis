@@ -83,9 +83,9 @@ This section documents the steps I take while working on this project.
 * [x] Review inventory levels against sales activity
 
 ### Step 7: Dashboard Development
-* [ ] Build KPI measures
-* [ ] Create Power BI visualizations
-* [ ] Add filters and interactive features
+* [x] Build KPI measures
+* [x] Create Power BI visualizations
+* [x] Add filters and interactive features
 * [ ] Design an executive dashboard
 
 ### Step 8: Insights & Recommendations
