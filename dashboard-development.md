@@ -1,4 +1,4 @@
-# DASHBOARD DEVELOPMENT
+## DASHBOARD DEVELOPMENT
 
 ---
 
@@ -8,7 +8,7 @@ The goal of this phase is to create interactive Power BI dashboards that transfo
 
 ---
 
-# KPI Measures
+## KPI Measures
 
 ## Procurement Dashboard
 
@@ -76,7 +76,7 @@ The goal of this phase is to create interactive Power BI dashboards that transfo
 
 ---
 
-# POWER BI VISUALIZATIONS
+## POWER BI VISUALIZATIONS
 
 ## Procurement Analysis
 
@@ -252,7 +252,7 @@ The goal of this phase is to create interactive Power BI dashboards that transfo
 
 ---
 
-# Filters and Interactive Features
+## Filters and Interactive Features
 
 ### Implemented Features
 
@@ -272,7 +272,7 @@ The goal of this phase is to create interactive Power BI dashboards that transfo
 
 ---
 
-# Dashboard Design
+## Dashboard Design
 
 The dashboards were designed using executive reporting principles to provide a clear and concise overview of business performance.
 
@@ -302,7 +302,7 @@ The dashboards were designed using executive reporting principles to provide a c
 
 ---
 
-# Overall Key Findings
+## Overall Key Findings
 
 * Total Procurement Spend reached **$321.90M** across **128 active vendors**.
 * DIAGEO NORTH AMERICA INC represented the largest procurement supplier with approximately **$50.96M** in procurement spend.
@@ -316,7 +316,7 @@ The dashboards were designed using executive reporting principles to provide a c
 
 ---
 
-# Status
+## Status
 
 ✅ Procurement Dashboard Completed
 
