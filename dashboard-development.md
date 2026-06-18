@@ -47,10 +47,17 @@ The dashboard will include visualizations to support the business questions expl
 Planned Visualizations:
 
 #### Procurement Analysis
-* Top Vendors by Procurement Spend
- > Key Finding: Procurement spending is concentrated among a small number of vendors. DIAGEO NORTH AMERICA INC is the largest supplier, with procurement spending significantly higher than the remaining vendors.
-* Procurement Spending Trend
-* Vendor Spend Concentration
+#### Top Vendors by Procurement Spend
+- A bar chart was created to identify vendors with the highest procurement spending. The analysis showed that DIAGEO NORTH AMERICA INC had the highest procurement spend, followed by MARTIGNETTI COMPANIES and JIM BEAM BRANDS COMPANY.
+> Key Finding: Procurement spending is concentrated among a small number of vendors, with DIAGEO NORTH AMERICA INC representing the largest procurement spend.
+
+#### Procurement Spending Trend
+- A line chart was created to analyze procurement spending patterns over time. Procurement spending increased steadily during the first half of the year, peaking in July before fluctuating throughout the remaining months.
+> Key Finding: Procurement activity remained strong throughout the year, with spending consistently exceeding $26 million during the second half of the year.
+
+#### Vendor Spend Concentration
+- A treemap was used to visualize the distribution of procurement spending across vendors. The chart highlighted that a relatively small group of suppliers accounted for a significant portion of total procurement spend.
+> Key Finding: Procurement spending is moderately concentrated among key suppliers, emphasizing the importance of managing strategic vendor relationships and supplier dependency risks.
       
 #### Sales Analysis
 * Top Vendors by Sales Revenue
