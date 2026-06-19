@@ -47,11 +47,11 @@ Through this project, I aim to:
 - Business Reporting
 
 ## Dashboard Screenshots
-### Procurement Dashboard
+> ### Procurement Dashboard
 ![Procurement Dashboard](Screenshots/procurement-analysis-screenshot.png)
-### Sales Dashboard
+> ### Sales Dashboard
 ![Sales Dashboard](Screenshots/sales-analysis-screenshot.png)
-### Inventory Dashboard
+> ### Inventory Dashboard
 ![Inventory Dashboard](Screenshots/inventory-analysis-screenshot.png)
 
 ## Data Model
@@ -59,7 +59,7 @@ The Power BI dashboard was developed using the primary analytical tables:
 - purchases
 - sales
 - end_inventory
-![Data Model](Screenshots/data-model-screenshot.png)
+> ![Data Model](Screenshots/data-model-screenshot.png)
 > Relationships
 - sales → purchases (many-to-one)
 - purchases → end_inventory (many-to-one)
@@ -68,8 +68,7 @@ The relationships enable analysis of procurement spending, sales performance, an
 
 ## Dataset
 This project uses the Vendor Performance Analysis dataset from Kaggle.
-Source:
-https://www.kaggle.com/datasets/harshmadhavan/vendor-performance-analysis
+> Source: https://www.kaggle.com/datasets/harshmadhavan/vendor-performance-analysis
 
 The dataset contains information related to vendors, purchases, inventory, pricing, and sales transactions.
 
