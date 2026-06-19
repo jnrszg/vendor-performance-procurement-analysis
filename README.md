@@ -97,11 +97,11 @@ This section documents the steps I take while working on this project.
 ### Step 9: Documentation
 * [x] Add screenshots
 ### Procurement Dashboard
-> ![Procurement Dashboard](procurement-analysis-screenshot.png)
+> ![Procurement Dashboard](Screenshots/procurement-analysis-screenshot.png)
 ### Sales Dashboard
-> ![Sales Dashboard](sales-analysis-screenshot.png)
+> ![Sales Dashboard](Screenshots/sales-analysis-screenshot.png)
 ### Inventory Dashboard
-> ![Inventory Dashboard](inventory-analysis-screenshot.png)
+> ![Inventory Dashboard](Screenshots/inventory-analysis-screenshot.png)
 * [x] Update project documentation
 * [x] Publish completed project
 
