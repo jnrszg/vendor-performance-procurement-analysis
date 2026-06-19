@@ -4,7 +4,7 @@
 
 ## Objective
 
-The goal of this phase is to create interactive Power BI dashboards that transform procurement, sales, and inventory data into actionable business insights. The dashboards were designed to support decision-making through KPI monitoring, trend analysis, vendor evaluation, product performance tracking, inventory management, and store-level analysis.
+The goal of this phase is to create interactive Power BI dashboards that transform procurement, sales, and inventory data into meaningful business insights. The dashboards were designed to support decision-making through KPI monitoring, trend analysis, vendor evaluation, product performance tracking, inventory management, and store-level analysis.
 
 ---
 
