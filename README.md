@@ -1,4 +1,5 @@
 # Vendor Performance & Procurement Insights Dashboard
+> Note: This is my first Portfolio.
 
 ## Overview
 To develop my data analytics skills, I wanted to work with a dataset that relates to my experience in costing, procurement support, and commercial reporting.
@@ -111,4 +112,15 @@ This section documents the steps I take while working on this project.
 * AI Productivity Tool (ChatGPT and Claude)
 
 ## Project Status
-🚧 Completed
+✅ Completed
+
+## Skills Demonstrated
+- SQL
+- Data Cleaning
+- Data Validation
+- Power BI
+- Data Visualization
+- KPI Development
+- Procurement Analysis
+- Inventory Analysis
+- Business Reporting
