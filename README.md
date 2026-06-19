@@ -6,6 +6,12 @@ To develop my data analytics skills, I worked with a procurement, inventory, and
 
 Using SQL and Power BI, I analyzed vendor performance, procurement spending, sales trends, and inventory management to generate business insights and recommendations.
 
+## Dataset
+This project uses the Vendor Performance Analysis dataset from Kaggle.
+> Source: https://www.kaggle.com/datasets/harshmadhavan/vendor-performance-analysis
+
+The dataset contains information related to vendors, purchases, inventory, pricing, and sales transactions.
+
 ## Objectives
 Through this project, I aim to:
 
@@ -16,7 +22,7 @@ Through this project, I aim to:
 * Develop reporting and data storytelling skills
 * Gain experience working with data stored in a database
 
-## Questions I Want to Explore
+## Business Questions
 - Which vendors account for the highest procurement spending?
 - Which vendors generate the highest sales value?
 - Is procurement spending concentrated among a small number of vendors?
@@ -33,7 +39,8 @@ Through this project, I aim to:
 * SQLite (DB Browser for SQLite)
 * DBeaver
 * Power BI
-* AI Productivity Tool (ChatGPT and Claude)
+* ChatGPT
+* Claude
 
 ## Skills Demonstrated
 - SQL
@@ -47,30 +54,34 @@ Through this project, I aim to:
 - Business Reporting
 
 ## Dashboard Screenshots
-> ### Procurement Dashboard
+
+### Procurement Dashboard
 ![Procurement Dashboard](Screenshots/procurement-analysis-screenshot.png)
-> ### Sales Dashboard
+### Sales Dashboard
 ![Sales Dashboard](Screenshots/sales-analysis-screenshot.png)
-> ### Inventory Dashboard
+### Inventory Dashboard
 ![Inventory Dashboard](Screenshots/inventory-analysis-screenshot.png)
 
 ## Data Model
-The Power BI dashboard was developed using the primary analytical tables:
+The Power BI dashboard was developed using a relational data model connecting procurement, sales, and inventory data.
 - purchases
 - sales
 - end_inventory
-> ![Data Model](Screenshots/data-model-screenshot.png)
-> Relationships
+![Data Model](Screenshots/data-model-screenshot.png)
+
+## Relationships
 - sales → purchases (many-to-one)
 - purchases → end_inventory (many-to-one)
+> The relationships enable analysis of procurement spending, sales performance, and inventory value across products.
 
-The relationships enable analysis of procurement spending, sales performance, and inventory value across products.
-
-## Dataset
-This project uses the Vendor Performance Analysis dataset from Kaggle.
-> Source: https://www.kaggle.com/datasets/harshmadhavan/vendor-performance-analysis
-
-The dataset contains information related to vendors, purchases, inventory, pricing, and sales transactions.
+## Key Findings
+- Total Procurement Spend reached $321.90M across 128 active vendors.
+- DIAGEO NORTH AMERICA INC was the largest supplier, accounting for approximately 15.8% of procurement spending.
+- Total Sales Revenue reached $452.06M from approximately 33 million units sold.
+- Sales revenue exceeded procurement spending in every month analyzed.
+- Jack Daniels No. 7 Black Label emerged as the highest-performing product across procurement spend, sales revenue, and inventory value.
+- Total Inventory Value reached approximately $79.70M across 80 stores.
+- Procurement spending and sales revenue were concentrated among a relatively small group of key vendors.
 
 ## Project Documentation
 
