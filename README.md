@@ -1,14 +1,32 @@
 # Vendor Performance & Procurement Insights Dashboard
-> Note: This is my first Portfolio.
+> Note: This is my first Data Analytics Portfolio Project.
 
 ## Overview
-To develop my data analytics skills, I wanted to work with a dataset that relates to my experience in costing, procurement support, and commercial reporting.
+To develop my data analytics skills, I worked with a procurement, inventory, and sales dataset that closely aligns with my professional background in costing, procurement support, and commercial reporting.
 
-In this project, I will use Excel, SQL, and Power BI to explore vendor, purchasing, inventory, and sales data and practice turning data into useful business insights.
+Using SQL and Power BI, I analyzed vendor performance, procurement spending, sales trends, and inventory management to generate business insights and recommendations.
+
+## Skills Demonstrated
+- SQL
+- Data Cleaning
+- Data Validation
+- Power BI
+- Data Visualization
+- KPI Development
+- Procurement Analysis
+- Inventory Analysis
+- Business Reporting
+
+## Dashboard Screenshots
+### Procurement Dashboard
+![Procurement Dashboard](Screenshots/procurement-analysis-screenshot.png)
+### Sales Dashboard
+![Sales Dashboard](Screenshots/sales-analysis-screenshot.png)
+### Inventory Dashboard
+![Inventory Dashboard](Screenshots/inventory-analysis-screenshot.png)
 
 ## Dataset
 This project uses the Vendor Performance Analysis dataset from Kaggle.
-
 Source:
 https://www.kaggle.com/datasets/harshmadhavan/vendor-performance-analysis
 
@@ -47,63 +65,7 @@ Through this project, I aim to:
 | Dashboard Development | 17-19 June 2026      |
 | Project Completion    | 19 June 2026         |
 
-## Project Journey
-This section documents the steps I take while working on this project.
 
-### Step 1: Project Setup
-* [x] Created GitHub repository
-* [x] Selected and downloaded the dataset from Kaggle
-* [x] Defined project objectives and business questions
-
-### Step 2: Dataset Review
-* [x] Review all dataset files
-* [x] Understand the purpose of each table
-* [x] Identify key fields and relationships
-* [x] Document observations about the data
-
-### Step 3: Data Cleaning & Preparation
-* [x] Check for missing values
-* [x] Review duplicate records
-* [x] Standardize data formats
-* [x] Prepare data for analysis
-
-### Step 4: Procurement Analysis
-* [x] Identify vendors with the highest procurement spending
-* [x] Analyze procurement spending trends over time
-* [x] Determine whether spending is concentrated among a small number of vendors
-
-### Step 5: Sales Analysis
-* [x] Identify vendors generating the highest sales value
-* [x] Analyze sales trends over time
-* [x] Compare procurement spending with sales revenue
-      
-### Step 6: Product & Inventory Analysis
-* [x] Identify products with the highest purchase cost
-* [x] Identify products generating the highest sales revenue
-* [x] Calculate inventory value
-* [x] Review inventory levels against sales activity
-
-### Step 7: Dashboard Development
-* [x] Build KPI measures
-* [x] Create Power BI visualizations
-* [x] Add filters and interactive features
-* [x] Design an executive dashboard
-
-### Step 8: Insights & Recommendations
-* [x] Summarize key findings
-* [ ] Identify risks and opportunities
-* [ ] Develop recommendations based on the analysis
-
-### Step 9: Documentation
-* [x] Add screenshots
-### Procurement Dashboard
-> ![Procurement Dashboard](Screenshots/procurement-analysis-screenshot.png)
-### Sales Dashboard
-> ![Sales Dashboard](Screenshots/sales-analysis-screenshot.png)
-### Inventory Dashboard
-> ![Inventory Dashboard](Screenshots/inventory-analysis-screenshot.png)
-* [x] Update project documentation
-* [x] Publish completed project
 
 ## Tools
 * SQLite (DB Browser for SQLite)
@@ -114,13 +76,4 @@ This section documents the steps I take while working on this project.
 ## Project Status
 ✅ Completed
 
-## Skills Demonstrated
-- SQL
-- Data Cleaning
-- Data Validation
-- Power BI
-- Data Visualization
-- KPI Development
-- Procurement Analysis
-- Inventory Analysis
-- Business Reporting
+
