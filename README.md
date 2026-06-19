@@ -108,6 +108,7 @@ This section documents the steps I take while working on this project.
 * SQLite (DB Browser for SQLite)
 * DBeaver
 * Power BI
+* AI Productivity Tool (ChatGPT and Claude)
 
 ## Project Status
-🚧 In Progress
+🚧 Completed
