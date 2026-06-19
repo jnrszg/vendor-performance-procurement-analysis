@@ -43,8 +43,8 @@ Through this project, I aim to:
 | Dataset Review        | 15 June 2026         |
 | Data Cleaning         | 15-16 June 2026      |
 | SQL Analysis          | 16-17 June 2026      |
-| Dashboard Development | 17-xx June 2026      |
-| Project Completion    | 20 June 2026         |
+| Dashboard Development | 17-19 June 2026      |
+| Project Completion    | 19 June 2026         |
 
 ## Project Journey
 This section documents the steps I take while working on this project.
@@ -94,9 +94,15 @@ This section documents the steps I take while working on this project.
 * [ ] Develop recommendations based on the analysis
 
 ### Step 9: Documentation
-* [ ] Add screenshots
+* [x] Add screenshots
+### Procurement Dashboard
+> ![Procurement Dashboard](procurement-analysis-screenshot.png)
+### Sales Dashboard
+> ![Sales Dashboard](sales-analysis-screenshot.png)
+### Inventory Dashboard
+> ![Inventory Dashboard](inventory-analysis-screenshot.png)
 * [x] Update project documentation
-* [ ] Publish completed project
+* [x] Publish completed project
 
 ## Tools
 * SQLite (DB Browser for SQLite)
